@@ -12,10 +12,10 @@ fieldset {
 table {
     margin: 5px;
     border-collapse: collapse;
+    border: 1px solid #ddd;
 }
   
 td, th {
-    border: 1px solid #ddd;
     padding: 8px;
 }
   
