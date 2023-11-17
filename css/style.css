@@ -12,19 +12,20 @@ fieldset {
 table {
     margin: 5px;
     border-collapse: collapse;
-    border: 1px solid #ddd;
 }
   
 td, th {
-    padding: 8px;
+    padding: 5px;
 }
   
 tr:nth-child(even){background-color: #f2f2f2;}
   
 th {
-    padding-top: 12px;
-    padding-bottom: 12px;
     text-align: left;
     background-color: #04AA6D;
     color: white;
+}
+
+td {    
+    border-bottom: 1px solid #ddd;
 }

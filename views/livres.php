@@ -5,6 +5,12 @@
 
     <body>
         
+        <div>
+            <a href="addbook.php">
+                <button>Ajouter des elements</button>
+            </a>
+        </div>
+
         <table>
             <thead>
                 <tr>
@@ -17,6 +23,8 @@
                     echo '
                         <tr>
                             <td>'.$ligneAuteur['NOM_AUTEUR'].'</td>
+                            <td><a href="autorupdate.php?id='.$ligneAuteur['ID_AUTEUR'].'">Modifier</a></td>
+                            <td><a href="../controllers/autordelete.php?id='.$ligneAuteur['ID_AUTEUR'].'">Supprimer</a></td>
                         </tr>
                     ';
                 }
@@ -36,6 +44,8 @@
                     echo '
                         <tr>
                             <td>'.$ligneEditeur['NOM_EDITEUR'].'</td>
+                            <td><a href="editorupdate.php?id='.$ligneEditeur['ID_EDITEUR'].'">Modifier</a></td>
+                            <td><a href="../controllers/editordelete.php?id='.$ligneEditeur['ID_EDITEUR'].'">Supprimer</a></td>
                         </tr>
                     ';
                 }
@@ -62,6 +72,8 @@
                             <td>'.$ligneLivre['NOM_AUTEUR'].'</td>
                             <td>'.$ligneLivre['NOM_EDITEUR'].'</td>
                             <td>'.$ligneLivre['NOM_LIVRE'].'</td>
+                            <td><a href="bookupdate.php?id='.$ligneLivre['ID_LIVRE'].'">Modifier</a></td>
+                            <td><a href="../controllers/bookdelete.php?id='.$ligneLivre['ID_LIVRE'].'">Supprimer</a></td>
                         </tr>
                     ';
                 }

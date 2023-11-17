@@ -2,7 +2,7 @@
 
 require_once "../includes/connectBd.php";
 
- $con = connectdb();
+$con = connectdb();
 
 if (isset($_POST['NOM_AUTEUR'])) {
 
